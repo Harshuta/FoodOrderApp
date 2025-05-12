@@ -65,6 +65,7 @@ src/main/java/com/example/foodordering/
 ├── model/
 │ ├── Customer.java
 │ ├── MenuItem.java
+
 │ ├── MenuUpdateRequest.java
 │ ├── Order.java
 │ └── Restaurant.java
@@ -78,9 +79,13 @@ src/main/java/com/example/foodordering/
 │ └── HighestRatingStrategy.java
 └── FoodOrderingApplication.java
 
-📌 API Highlights
-Endpoint	Method	Description
-/createRestaurants	          POST	    Onboard a new restaurant
-/restaurants/{id}/updateMenu	PUT	      Add or update menu items for a restaurant
-/placeOrder                 	POST	    Place a new order
-/placeOrder	                  GET     	Get all placed orders (or for testing)
+
+
+## 📌 API Highlights
+| Endpoint                          | Method | Description                                 |
+|----------------------------------|--------|---------------------------------------------|
+| `/createRestaurants`             | POST   | Onboard a new restaurant                    |
+| `/restaurants/{id}/updateMenu`   | PUT    | Add or update menu items for a restaurant   |
+| `/placeOrder`                    | POST   | Place a new order                           |
+| `/placeOrder`                    | GET    | Get all placed orders (or for testing)      |
+
