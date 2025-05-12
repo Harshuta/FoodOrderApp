@@ -64,3 +64,9 @@ This application is designed to manage restaurants, customers, and orders in a f
 | `/placeOrder`                    | POST   | Place a new order                                          |
 | `/placeOrder`                    | GET    | Get all placed orders (or for testing)                     |
 
+
+## 📄 Test Cases Documentation
+
+You can view the complete test case document with screenshots and descriptions here:
+
+👉 [View Test Cases Document on Google Docs](https://docs.google.com/document/d/1AdnhxhnuteSwk7laAjYZrm89GTlb0ifJgpD-gqeDBPs/edit?usp=sharing)
