@@ -65,7 +65,6 @@ src/main/java/com/example/foodordering/
 ├── model/
 │ ├── Customer.java
 │ ├── MenuItem.java
-
 │ ├── MenuUpdateRequest.java
 │ ├── Order.java
 │ └── Restaurant.java
@@ -78,6 +77,10 @@ src/main/java/com/example/foodordering/
 │ ├── LowestCostStrategy.java
 │ └── HighestRatingStrategy.java
 └── FoodOrderingApplication.java
+
+csharp
+Copy
+Edit
 
 
 
