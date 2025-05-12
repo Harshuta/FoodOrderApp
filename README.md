@@ -56,39 +56,11 @@ This application is designed to manage restaurants, customers, and orders in a f
 - **No External Database**: All data is stored and processed in memory for simplicity and performance
 
 
-## 📁 Project Structure
-src/main/java/com/example/foodordering/
-├── controller/
-│ ├── CustomerController.java
-│ ├── RestaurantController.java
-│ └── OrderController.java
-├── model/
-│ ├── Customer.java
-│ ├── MenuItem.java
-│ ├── MenuUpdateRequest.java
-│ ├── Order.java
-│ └── Restaurant.java
-├── service/
-│ ├── CustomerService.java
-│ ├── OrderService.java
-│ └── RestaurantService.java
-├── strategy/
-│ ├── SelectionStrategy.java
-│ ├── LowestCostStrategy.java
-│ └── HighestRatingStrategy.java
-└── FoodOrderingApplication.java
-
-csharp
-Copy
-Edit
-
-
-
 ## 📌 API Highlights
-| Endpoint                          | Method | Description                                 |
-|----------------------------------|--------|---------------------------------------------|
-| `/createRestaurants`             | POST   | Onboard a new restaurant                    |
-| `/restaurants/{id}/updateMenu`   | PUT    | Add or update menu items for a restaurant   |
-| `/placeOrder`                    | POST   | Place a new order                           |
-| `/placeOrder`                    | GET    | Get all placed orders (or for testing)      |
+| Endpoint                          | Method | Description                                               |
+|----------------------------------|--------|------------------------------------------------------------|
+| `/createRestaurants`             | POST   | Onboard a new restaurant                                   |
+| `/restaurants/{id}/updateMenu`   | PUT    | Add or update or soft delete menu items for a restaurant   |
+| `/placeOrder`                    | POST   | Place a new order                                          |
+| `/placeOrder`                    | GET    | Get all placed orders (or for testing)                     |
 
