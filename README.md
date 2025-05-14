@@ -8,7 +8,7 @@ This application is designed to manage restaurants, customers, and orders in a f
 
 - ✅ Onboarding of restaurants with menu, rating, and capacity (`max_no_orders`)
 - ✅ Order placement by customers using item list and selection strategy
-- ✅ Auto-assignment of orders to restaurants using pluggable selection strategies(rating startegy).
+- ✅ Auto-assignment of orders to restaurants using pluggable selection strategies(rating strategy).
 - ✅ Order lifecycle management (ACCEPTED → COMPLETED)
 - ✅ In-memory data handling (no database or persistent storage)
 
@@ -38,15 +38,16 @@ This application is designed to manage restaurants, customers, and orders in a f
    - Customers can place orders with:
      - List of items and quantity
      - Selection strategy:
-       - `HIGHEST_RATING`: Assigns to restaurant with best rating.
+       - `HIGHEST_RATING`: Auto Assigns to restaurant with best rating.
 
 4. **Order Rules**
-   - An order can only be accepted if all items are available in one restaurant
-   - Restaurant cannot accept more orders than its capacity (`max_no_orders`)
-   - Once an order is ACCEPTED:
-     - Cannot be cancelled
-     - Can only be marked COMPLETED by the restaurant
-   - COMPLETED orders free up processing capacity
+ - An order is accepted only if all items are available in one restaurant.
+ - A restaurant cannot accept more orders than its max_no_orders limit.
+ - Once an order is ACCEPTED: 
+ - It cannot be cancelled.
+ - It can be marked as COMPLETED by the restaurant.
+  (In this project, orders auto-complete after 10 seconds for demo purposes.)
+ - A COMPLETED order frees up the restaurant’s capacity to take new orders.
 
 ## 🧠 Design Highlights
 
